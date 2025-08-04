@@ -32,6 +32,7 @@ export default class App extends Component {
         <NavBar/>
         
          <Routes>
+  <Route path="/" element={<News setProgress={this.setProgress} key="home" pagesize={10} country="us" category="general" />} />
           <Route path="/Home" element={<News setProgress={this.setProgress} key="home" pagesize={10} country="us" category="general" />} />
     <Route path="/link" element={<News setProgress={this.setProgress} key="link" pagesize={10} country="us" category="general" />} />
     <Route path="/technology" element={<News setProgress={this.setProgress} key="technology" pagesize={10} country="us" category="technology" />} />
